@@ -15,7 +15,7 @@ export default function Search() {
         type="text"
         placeholder="Nhập mã sinh viên hoặc họ tên..."
         value={keyword}
-        onChange={(e) => dispatch(searchStudent(e.target.value))}
+        onChange={(key) => dispatch(searchStudent(key.target.value))}
         className="w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm transition-all duration-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
       />
     </div>
